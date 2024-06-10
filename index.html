@@ -1,3 +1,30 @@
-<h1>Hello, User!</h1><br/>
-<p>This Website is still in development!</p>
-- The BoxJS Team <a href="https://github.com/lightyyt">(Lighty : Personal Owner Account)</a>
+<html>
+  <head>
+    <title>BoxJS Game Framework</title>
+    <link rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <div class="topbar"><a href="docs">Documentation</a></div>
+    <h1>BoxJS Game Framework</h1>
+    <h2>Simple but powerful JavaScript Videogame Framework</h2>
+    <pre class="code"><code id="sample_code" class="language-js">import { * } from 'box-js.js';
+
+const game = new BOXJS.box(FLAGS.FILL_SCREEN, [1280,720], [0,0]);
+
+game.anchor = ANCHORS.CENTER; //TOP_RIGHT, TOP_LEFT, BOTTOM_RIGHT, BOTTOM_LEFT, CENTER_TOP, CENTER_RIGHT, CENTER_BOTTOM, CENTER_LEFT, CENTER
+
+game.create_scene(0, "main_menu", new BOXJS.scene([
+  new BOXJS.Sprite(SPRITES.SQUARE_GREEN, BOXJS.Vec2(0,0), 0, spinnySquare)
+], COLORS.DARK_GRAY));
+
+
+function spinnySquare(sprite){
+  sprite.rotation += 2
+}</code></pre>
+  </body>
+</html>

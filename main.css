@@ -3,3 +3,45 @@ body{
   margin:0;
   background-color:#44444A;
 }
+
+h1,h2{
+  text-align: center;
+  color:white;
+  padding:20pt;
+  background-color:#333333;
+  margin-bottom:0.2pt;
+}
+h1{
+  font-size:6vw;
+  margin-top:2pt;
+  padding-top: 50pt;
+  padding-bottom:50pt;
+}
+h2{
+  font-size:2vw;
+}
+
+.code{
+  background-color:#2b2b2b;
+  border: 2pt solid #1a1a1a;
+  border-radius: 5pt;
+  display:block;
+  padding: 10pt;  /* Optional: Add some padding for better readability */
+  font-family: monospace;
+  display:inline-block;
+  text-align:left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size:1vw;
+}
+
+.topbar{
+  background-color:#242424;
+  padding:0.5vw;
+  text-align: right;
+}
+
+a{
+  color:#FF8800;
+}
